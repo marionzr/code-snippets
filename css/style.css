@@ -1,0 +1,11 @@
+/* tags */
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+hr {
+  border-style: solid;
+  border-width: 0.025rem;
+  border-color: lightgray;
+}
