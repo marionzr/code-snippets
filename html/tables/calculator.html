@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/table.css" rel="stylesheet">
+    <link href="../../css/calculator.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>A calculator "without" using JavaScript</p>
+    <form name="memory">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="result">
+                        <input type="button" name="input" id="result" value=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <input type="button" value="1" onclick="memory.input.value += '1'">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="2" onclick="memory.input.value +='2'">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="3" onclick="memory.input.value += '3'">
+                    </td>
+                    <td class="operator">
+                        <input type="button" value="+" onclick="memory.input.value += ' + '">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <input type="button" value="4" onclick="memory.input.value += '4'">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="5" onclick="memory.input.value += '5'">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="6" onclick="memory.input.value += '6'">
+                    </td>
+                    <td class="operator">
+                        <input type="button" value="-" onclick="memory.input.value += ' - '">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <input type="button" value="7" onclick="memory.input.value += '7'">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="8" onclick="memory.input.value += '8'">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="9" onclick="memory.input.value += '9'">
+                    </td>
+                    <td class="operator">
+                        <input type="button" value="*" onclick="memory.input.value += ' * '">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clear">
+                        <input type="button" value="c" onclick="memory.input.value = ' '">
+                    </td>
+                    <td class="number">
+                        <input type="button" value="0" onclick="memory.input.value += '0'">
+                    </td>
+                    <td class="equals">
+                        <input type="button" value="=" onclick="memory.input.value = eval(memory.input.value)">
+                    </td>
+                    <td class="operator">
+                        <input type="button" value="/" onclick="memory.input.value += ' / '">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

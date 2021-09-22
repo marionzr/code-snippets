@@ -1,0 +1,65 @@
+body {
+  background-color: darkgray;
+  min-width: 300px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 2.5rem;
+}
+table {
+  border-style: solid;
+  border-collapse: unset;
+  padding: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+td {
+  padding: 0.25rem;
+  margin: 0;
+  border-style: none;
+}
+
+input {
+  border-width: 0;
+  background-color: aliceblue;
+  position: relative;
+  width: 75px;
+  height: 5rem;
+  font-size: 2rem;
+  box-shadow: 0.15rem 0.15rem 0.25rem 0 salmon;
+  border-radius: 0.5rem;
+}
+
+input:hover {
+  background-color: lightgray;
+  box-shadow: 0.15rem 0.15rem 0.25rem 0 red;
+}
+
+input:active {
+  background-color: lightgray;
+  box-shadow: none;
+}
+
+.operator input {
+  background-color: lightgray;
+  font-size: 3rem;
+}
+
+.clear input {
+  background-color: pink;
+  font-size: 3rem;
+}
+
+.result input {
+  width: 325px;
+  text-align: center;
+  background-color: gainsboro;
+  box-shadow: none;
+}
+
+.result input:active {
+  border-style: none;
+}
