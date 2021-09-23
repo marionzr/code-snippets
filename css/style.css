@@ -9,3 +9,7 @@ hr {
   border-width: 0.025rem;
   border-color: lightgray;
 }
+
+.source-of-information {
+  font-style: italic;
+}

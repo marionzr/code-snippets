@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/table.css" rel="stylesheet">
+    <title>Complex Tables: colspan vs rowspan</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Player stats</th>
+                <th rowspan="2">Competion</th>
+                <th colspan="3">Neymar</th>
+                <th colspan="3">Suarez</th>
+                <th colspan="3">Messi</th>
+            </tr>
+            <tr>
+                <!--<th>Player stats</th>-->
+                <!--<th>Competion</th>-->
+                <th>Ap</th>
+                <th>As</th>
+                <th>G</th>
+                <th>Ap</th>
+                <th>As</th>
+                <th>G</th>
+                <th>Ap</th>
+                <th>As</th>
+                <th>G</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- La Liga -->
+                <td rowspan="3">2016/2017</td>
+                <td>La Liga</td>
+                <!-- Neymar -->
+                <td>30</td>
+                <td>10</td>
+                <td>13</td>
+                <!-- Suarez -->
+                <td>35</td>
+                <td>13</td>
+                <td>29</td>
+                <!-- Messi -->
+                <td>34</td>
+                <td>9</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <!-- Champions League -->
+                <td>Champions League</td>
+                <!-- Neymar -->
+                <td>9</td>
+                <td>9</td>
+                <td>4</td>
+                <!-- Suarez -->
+                <td>9</td>
+                <td>2</td>
+                <td>3</td>
+                <!-- Messi -->
+                <td>9</td>
+                <td>2</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <!-- Other Cups -->
+                <td>Other Cups</td>
+                <!-- Neymar -->
+                <td>6</td>
+                <td>1</td>
+                <td>3</td>
+                <!-- Suarez -->
+                <td>7</td>
+                <td>1</td>
+                <td>5</td>
+                <!-- Messi -->
+                <td>9</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Goal contribution</td>
+                <td>45</td>
+                <td colspan="2">29</td>
+                <td>51</td>
+                <td colspan="2">53</td>
+                <td>52</td>
+                <td colspan="2">70</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Ap = Appearances, As = Assists, G = Goals</p>
+    <p class="source-of-information">Source: https://messivsronaldo.net/msn-vs-bbc/</p>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>xxxxxxx</th>
+                <th rowspan="2">rowspan = 2</th>
+                <th>xxxxxxx</th>
+                <th>xxxxxxx</th>
+                <th>xxxxxxx</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th colspan="2">colspan = 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">rowspan = 3</td>
+                <td colspan="2">colspan = 2</td>
+                <td>xxxxxxx</td>
+                <td>xxxxxxx</td>
+            </tr>
+            <tr>
+                <td>xxxxxxx</td>
+                <td>xxxxxxx</td>
+                <td rowspan="2">rowspan = 2</td>
+                <td>xxxxxxx</td>
+            </tr>
+            <tr>
+                <td>xxxxxxx</td>
+                <td>xxxxxxx</td>
+                <td rowspan="2">rowspan = 2</td>
+            </tr>
+            <tr>
+                <td colspan="3">colspan = 3</td>
+                <td>xxxxxxx</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>xxxxxxx</td>
+                <td colspan="4">colspan = 4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
