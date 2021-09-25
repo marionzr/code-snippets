@@ -10,6 +10,27 @@ hr {
   border-color: lightgray;
 }
 
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: royalblue;
+}
+
 .source-of-information {
   font-style: italic;
 }

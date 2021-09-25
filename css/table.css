@@ -24,3 +24,22 @@ th {
 tfoot td {
   background-color: lightgray;
 }
+
+td:hover,
+th:hover {
+  background-color: #dab865;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #d6bc7a;
+}
+
+/* classes */
+.backend {
+  background-color: cornflowerblue;
+}
+
+.frontend {
+  background-color: greenyellow;
+}
