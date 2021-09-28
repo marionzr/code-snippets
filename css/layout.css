@@ -1,0 +1,49 @@
+* {
+  border-style: solid;
+}
+
+body {
+  border-style: none;
+}
+
+.inline-block,
+.inline,
+.block {
+  border-style: solid;
+  border-color: blue;
+}
+
+.inline-block li,
+.inline li,
+.block li {
+  border-style: solid;
+  border-color: green;
+  background-color: lavender;
+  padding: 1rem;
+}
+
+.inline-block a,
+.inline a,
+.block a {
+  border-style: solid;
+  border-color: gold;
+  background-color: lavender;
+}
+
+.block li,
+.block a {
+  display: block; /* default */
+  padding: 1rem;
+}
+
+.inline li,
+.inline a {
+  display: inline;
+  padding: 1rem;
+}
+
+.inline-block li,
+.inline-block a {
+  display: inline-block;
+  padding: 1rem;
+}
