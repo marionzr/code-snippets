@@ -1,0 +1,130 @@
+body {
+  counter-reset: position;
+  /* Set a counter named 'position', and its initial value is 0. */
+  padding: 1rem;
+}
+
+html {
+  font-family: opensans, opensans-bastian, Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #06aa48;
+}
+
+table tbody tr td:first-child:before {
+  counter-increment: position; /* Increment the value of section counter by 1 */
+  content: counter(position);
+}
+
+div.standings {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  padding: 1rem;
+  width: 400px;
+  margin: 0;
+}
+
+table th,
+td {
+  border-style: none;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  color: #aaaaaf;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+tbody td {
+  border-color: #aaaaaf;
+  border-top-style: solid;
+  border-width: 0.05rem;
+  vertical-align: middle;
+}
+
+tbody tr:last-child td {
+  padding-bottom: 1.5rem;
+}
+
+tbody tr td:first-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+tbody tr td:nth-child(4) {
+  font-weight: bold;
+}
+
+.position {
+  position: relative;
+}
+
+.up {
+  height: 0.5rem;
+  fill: #3b9c00;
+  stroke-width: 0.125rem;
+  width: 0.5rem;
+}
+
+.down {
+  height: 0.5rem;
+  fill: red;
+  stroke-width: 0.125rem;
+  width: 0.5rem;
+  transform: rotate(180deg);
+}
+
+.arrow-left {
+  float: right;
+  margin-top: 3px;
+  transform: rotate(270deg);
+}
+
+.unchanged {
+  font-family: opensans-bold, Arial, sans-serif;
+  left: 0.75rem;
+  fill: grey;
+  height: 0.3125rem;
+  text-align: left;
+  top: 0.5rem;
+  width: 0.3125rem;
+}
+
+.team-logo {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border-style: solid;
+  border-color: lightgrey;
+  background-color: lavender;
+  border-radius: 100%;
+}
+
+.show-all {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 0.5px;
+  padding: 1rem;
+  width: 400px;
+  margin: 0;
+  color: #06aa48;
+  text-align: left;
+  font-weight: bold;
+}
