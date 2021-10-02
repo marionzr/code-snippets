@@ -8,6 +8,7 @@ body {
 
 .inline-block,
 .inline,
+ul.flex,
 .block {
   border-style: solid;
   border-color: blue;
@@ -15,6 +16,7 @@ body {
 
 .inline-block li,
 .inline li,
+.flex li,
 .block li {
   border-style: solid;
   border-color: green;
@@ -46,4 +48,19 @@ body {
 .inline-block a {
   display: inline-block;
   padding: 1rem;
+}
+
+ul.flex,
+div.flex {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+div.flex p {
+  margin: 0;
 }
