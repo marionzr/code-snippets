@@ -1,0 +1,16 @@
+input {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+div label,
+div input {
+  display: inline;
+}
+
+input[type="radio"] {
+}
+
+input[type="checkbox"] {
+  margin-top: 0.5rem;
+}
