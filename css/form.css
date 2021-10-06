@@ -1,16 +1,105 @@
-input {
-  margin-right: 0.5rem;
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+fieldset {
+  display: flex;
+  flex-flow: column;
+}
+
+fieldset {
+  border-style: solid;
+  border-width: 1px;
+  border-color: dodgerblue;
   margin-bottom: 0.5rem;
 }
 
-div label,
-div input {
+fieldset legend {
+  background-color: dodgerblue;
+  color: white;
+  padding: 0.15rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+fieldset legend:hover {
+  color: whitesmoke;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+label span {
+  font-weight: normal;
+}
+
+label[for="progress"] {
+  text-align: center;
+}
+
+input {
+  flex: 2;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+}
+
+input:hover,
+input:focus {
+  background-color: aliceblue;
+}
+
+select,
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+div.options {
   display: inline;
 }
 
-input[type="radio"] {
+button {
+  display: block;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.5rem auto;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
 }
 
-input[type="checkbox"] {
-  margin-top: 0.5rem;
+/* classes */
+
+.form {
+  margin: auto 25%;
+}
+
+.options label {
+  display: inline;
+  margin-left: -0.25rem;
+  margin-right: 0.25rem;
+}
+
+.options label span:hover {
+  background-color: aliceblue;
+  font-size: 0.85rem;
+}
+
+.phone-number label {
+  display: inline-block;
+}
+
+input:required:invalid,
+input:focus:invalid {
+  border-bottom-width: 1.5px;
 }

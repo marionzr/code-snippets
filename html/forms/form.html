@@ -9,44 +9,47 @@
 </head>
 <body>
 
-    <div>
+    <div class="form">
         <form autocomplete="on" name="user" method="POST">
             <fieldset name="personal-info">
                 <legend>Personal Information</legend>
 
                 <label for="first-name">First Name:
-                    <input id="first-name" name="first-name" type="text" required="true" autofocus="true" minlength="1" maxlength="256" tabindex="1">
+                    <input id="first-name" name="first-name" type="text" required autofocus minlength="1" maxlength="256" tabindex="1">
                 </label>
 
                 <label for="last-name">Last Name:
-                    <input id="last-name" name="last-name" type="text" required="true" minlength="1" maxlength="256" tabindex="2">
+                    <input id="last-name" name="last-name" type="text" required minlength="1" maxlength="256" tabindex="2">
                 </label>
             </fieldset>
             <fieldset name="contact">
                 <legend>Contact</legend>
 
-                <div>
-                    <label>
-                        <input id="contact-type" name="contact-type" type="radio" value="professional">Professional
+                <div class="options">
+                    <label>Contact Type: </label>
+                    <label for="contact-type-professional">
+                        <input id="contact-type-professional" name="contact-type" type="radio" value="professional"><span>Professional</span>
                     </label>
-                    <label>
-                        <input id="contact-type" name="contact-type" type="radio" value="personal">Personal
+                    <label for="contact-type-personal">
+                        <input id="contact-type-personal" name="contact-type" type="radio" value="personal"><span>Personal</span>
                     </label>
                 </div>
-                <div>
+                <div class="phone-number">
                     <label for="phone-number">Phone number:
                         <input id="phone-number" name="phone-number" type="tel" minlength="1" tabindex="3">
                     </label>
-                    <label>
-                        <input id="phone-type" name="phone-type" type="radio" value="mobile">Mobile
-                    </label>
-                    <label>
-                        <input id="phone-type" name="phone-type" type="radio" value="landline">Landline
-                    </label>
+                    <div class="options">
+                        <label for="phone-type-mobile">
+                            <input id="phone-type-mobile" name="phone-type" type="radio" value="mobile"><span>Mobile</span>
+                        </label>
+                        <label for="phone-type-landline">
+                            <input id="phone-type-landline" name="phone-type" type="radio" value="landline"><span>Landline</span>
+                        </label>
+                    </div>
                 </div>
 
                 <label for="email-address">Email:
-                    <input id="email-address" name="email-address" type="email" required="true" minlength="1" maxlength="256" tabindex="4">
+                    <input id="email-address" name="email-address" type="email" required minlength="1" maxlength="256" tabindex="4">
                 </label>
 
                 <label for="website">Website:
@@ -83,6 +86,5 @@
             <button type="submit">Save</button>
         </form>
     </div>
-
 </body>
 </html>
