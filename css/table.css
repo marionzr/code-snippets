@@ -43,3 +43,7 @@ tr:hover {
 .frontend {
   background-color: greenyellow;
 }
+
+.even-odd-rows tr:nth-child(even) {
+  background-color: cornflowerblue;
+}
